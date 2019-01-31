@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "pwa",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build"
+    }
+  ]
+}
