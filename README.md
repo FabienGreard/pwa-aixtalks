@@ -1,2 +1,7 @@
 # pwa-aixtalks
-Step by step on how to build a pwa
+
+Launch with `yarn dev` or `npm start`
+
+To switch from step-1 to step-n update step inside `server.js`
+
+Deploy with `yarn deploy` or `npm run deploy`

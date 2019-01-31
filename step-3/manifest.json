@@ -1,0 +1,20 @@
+{
+  "short_name": "at-pwa",
+  "name": "AixTalks - PWA",
+  "icons": [
+    {
+      "src": "/src/icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/src/icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#ffefd5",
+  "display": "standalone",
+  "theme_color": "#ffefd5"
+}

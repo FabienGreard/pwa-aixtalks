@@ -1,10 +1,16 @@
 {
   "version": 2,
-  "name": "pwa",
+  "alias": ["roooffer.com", "www.roooffer.com"],
   "builds": [
-    {
-      "src": "package.json",
-      "use": "@now/static-build"
-    }
+    { "src": "index.html", "use": "@now/static" },
+    { "src": "manifest.json", "use": "@now/static" },
+    { "src": "sw.js", "use": "@now/static" },
+    { "src": "src/**", "use": "@now/static" }
+  ],
+  "routes": [
+    { "src": "/", "dest": "/index.html" },
+    { "src": "/manifest.json", "dest": "/manifest.json" },
+    { "src": "/sw.js", "dest": "/sw.js" },
+    { "src": "/src/(.*)", "dest": "/src/$1" }
   ]
 }
